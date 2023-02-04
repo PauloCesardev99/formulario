@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    *{margin: 0px;}
+    body{font-family: Arial, Helvetica, sans-serif ;
+        background-image: url(background.webp);
+        background-color: rgba(0, 0, 0, 0.733);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        text-shadow: 1px black;
+        background-position: right center;
+    
+    
+    }
+    main{ min-width: 300px; max-width: 500px; margin: auto; background-color: white; padding: 10px; margin-top: 50px; border: 1px; border-radius: 4px;}
+    main>h1{padding: 10px; margin: 1px; text-align: center;}
+    main>form>p{margin: 10px; margin-top: 15px;}
+</style>
+<body>
+    <main>
+        <h1>Formulario</h1>
+        <form action="" method="post" autocomplete="on">
+            
+            <p>
+                <label for="nome">Nome:</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Coloque seu nome">
+            
+            </p>
+
+            <p>
+                <label for="email">Email:</label><br>
+                <input type="email" name="email" id="email" placeholder="Coloque seu email aqui" >
+            </p>
+            <p>
+                <label for="tel">Telefone:</label><br>
+                <input type="tel" name="tel" id="tel" placeholder="(xx)xxxx-xxxx">
+            </p>
+
+            <p>
+                <label for="sexo">Sexo:</label><br>
+                <input type="radio" name="sexo" id="sexo" value="f"> F
+                <input type="radio" name="sexo" id="sexo" value="m"> M
+            </p>
+            <p>
+                <label for="estado">Estado</label><Br>
+                <select name="estado" id="estado">
+                    <option value="sp">SP</option>
+                    <option value="es">ES</option>
+                    <option value="mg">MG</option>
+                    <option value="rj">RJ</option>
+                 </select>
+            </p>
+            <p>
+                <label for="int">Interesses:</label><br>
+                <input type="checkbox" name="int" id="int"> Programação <br>
+                <input type="checkbox" name="int" id="int"> Redes <br>
+                <input type="checkbox" name="int" id="int"> Arquitetura de computadores <br>
+                <input type="checkbox" name="int" id="int"> I.A <br>
+                <input type="checkbox" name="int" id="int"> Banco de Dados
+
+             </p>
+
+             <p>
+                <label for="imagem">Sua Foto</label>
+                <input type="file" name="imagem" id="imagem">
+             </p>
+             <p>
+                <label for="text"></label>
+                <textarea name="text" id="text" cols="30" rows="10" placeholder="fale sobre você aqui.."></textarea>
+             </p>
+
+             <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Resetar">
+             </p>
+             
+
+
+
+        </form>
+    </main>
+    
+</body>
+</html>
